@@ -1,13 +1,22 @@
 <?php
 
-class Count {
-  public function countUp() {
-    for($i=0;$i<10;$i++){
-      print outCount($i);
+class Book {
+  
+  private $title;
+  
+  public function buyBook($money) {
+    if ($money < 400) {
+      return "NG";      
+    } else if(400 <= $money) {
+      return "OK"; 
     }
   }
   
-  private function outCount($i) {
-    return "カウント：".$i;
+  public function setTitle($title) {
+    $this->title = $title;
   }
+
+  public function getTitle() {
+    return $this->title;
+  }  
 }
