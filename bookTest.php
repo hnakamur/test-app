@@ -1,9 +1,9 @@
 <?php
 
 class bookTest extends PHPUnit_Framework_TestCase {
-  public function testBuy() {
-    $this->assertEquals("NG", buy(350));
-    $this->assertEquals("OK", buy(400));
+  public function testBuyBook() {
+    $this->assertEquals("NG", buyBook(350));
+    $this->assertEquals("OK", buyBook(400));
   }
 }
 
