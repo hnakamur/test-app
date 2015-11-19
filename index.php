@@ -3,7 +3,7 @@
 
   $book = new book();
   
-  $book->setTitle("ハリーポッター");
+  $book->setTitle("ハローポッター");
   print $book->getTitle();
   
   print $book->buyBook(400);
